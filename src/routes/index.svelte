@@ -12,9 +12,15 @@
 
 <style>
 	main {
+		display: grid;
+		grid-template-columns: 1fr min(70ch, calc(100% - 64px)) 1fr;
+		grid-column-gap: 32px;
 		text-align: center;
 		padding: 1em;
 		margin: 0 auto;
+	}
+	main > * {
+		grid-column: 2;
 	}
 
 	h1 {
